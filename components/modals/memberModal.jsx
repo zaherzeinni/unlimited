@@ -1,5 +1,6 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
+import { IoMdClose } from "react-icons/io";
 
 export default function MemberModal({ isOpen, setIsOpen, member }) {
   function closeModal() {
@@ -39,6 +40,16 @@ export default function MemberModal({ isOpen, setIsOpen, member }) {
                 >
                   {member?.first}
                 </Dialog.Title> */}
+
+
+              <Dialog.Title
+                as="h3"
+                className="text-lg font-medium text-end flex justify-end leading-6 text-gray-900"
+              >
+               <IoMdClose className="text-3xl  cursor-pointer" onClick={closeModal} />
+              </Dialog.Title>
+
+                
                 <div className="mt-2 ">
                   <div className=" flex cursor-pointer gap-12 md:flex-ro flex-col ">
                     <div className="relative md:w-[70%]">

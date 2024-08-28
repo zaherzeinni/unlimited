@@ -7,6 +7,8 @@ import ContactModal from "./modals/contactModal";
 import CollabrateModal from "./modals/collabrateModal";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Link from "next/link";
+import { CiMenuFries } from "react-icons/ci";
+
 import {
   Modal,
   ModalOverlay,
@@ -172,19 +174,7 @@ export default function Navbar() {
               />
               <li>
                 <button onClick={handleToggleMenu}>
-                  <svg
-                    className="w-8 h-8 mr-6 !text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M4 6h16M4 12h16m-7 6h7"
-                    ></path>
-                  </svg>
+                <CiMenuFries className="text-white text-3xl mr-2    !font-bold" />
                 </button>
               </li>
             </menu>
@@ -328,11 +318,11 @@ export default function Navbar() {
         </div>
 
 
-{/* ----------------------mobile navbar-------------------------------------- */}
+{/* ----------------------MOBILE NAVBAR -------------------------------------- */}
 
         {open && (
           <div className=" !z-50 fixed top-0 right-0 left-0 bottom-0 ">
-            <div className="!w-full  !max-w-screen-lg -top-[30px] !z-50 relativ absolute  ">
+            <div className="!w-full  !max-w-screen-lg -top-[110px] !z-50 relativ absolute  ">
               <div
                 className={`sm:flex flex-col h-[400px] w-[100vw] justify-between  bg-white relative !z-10 pt-[8rem] pb-10    ${
                   open ? "block" : "hidden"
@@ -342,13 +332,13 @@ export default function Navbar() {
                   <div className="flex justify-between w-full   px-12">
                   <Link href='/'>
                     <img
-                      src="https://unlimed-com.vercel.app/img/logowhite.png"
+                      src="/logowhite.png"
                       className="w-[165px]  h-[60px]"
                     />
 
 </Link>
                     <button onClick={handleToggleMenu}>
-                      <img src="/close.png" className="w-4 h-4" alt="" />
+                      <img src="/close.png" className="w-5 h-4 ml-4  cursor-pointer absolute  " alt="" />
                     </button>
                   </div>
                 </div>

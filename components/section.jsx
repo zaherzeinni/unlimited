@@ -10,7 +10,7 @@ export default function SectionOne() {
 
 
   return (
-    <div id="about" className="bg-[#ffff] h-[1030px] -mt- lg:mt-0 !overflow-x-hidde  relative   w-full   ">
+    <div id="about" className="bg-[#ffff] h-[1100px] -mt- lg:mt-0 !overflow-x-hidde  relative   w-full   ">
 
 
 
@@ -19,7 +19,7 @@ export default function SectionOne() {
 <img 
     src='/clip-path-group.png' 
     alt='un background' 
-    className='absolute right-0 hidde lg:block  object-fill   bg-cover  bg-[#f5f5f5]  md:bg-transparent  transform -translate-y-1/2 !w-full lg:!w-1/2 !h-full top-[550px] max-w-full'
+    className='absolute right-0 hidde lg:block  object-fill   bg-cover  bg-[#f5f5f5]1 bg-[#fff]  md:bg-transparent  transform -translate-y-1/2 !w-full lg:!w-1/2 !h-full top-[550px] max-w-full'
   />
 
 <div className=" w-full h-full">

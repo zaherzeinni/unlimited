@@ -2,6 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment ,useState } from "react";
 import axios from 'axios'
 import { Button } from "@chakra-ui/react";
+import { IoMdClose } from "react-icons/io";
 export default function ContactModal({ isOpen, setIsOpen }) {
   function closeModal() {
     setIsOpen(false);
@@ -79,13 +80,14 @@ export default function ContactModal({ isOpen, setIsOpen }) {
             <Dialog.Panel className="w-full max-w-[80%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
               <Dialog.Title
                 as="h3"
-                className="text-lg font-medium leading-6 text-gray-900"
+                className="text-lg font-medium text-end flex justify-end leading-6 text-gray-900"
               >
-                Contact Form
+              <IoMdClose className="text-3xl  cursor-pointer" onClick={closeModal} />
+             
               </Dialog.Title>
-              <div className=" mt-12 container">
+              <div className=" mt-4 container">
 
-<div className=" w-[90%] px-2">
+<div className=" w-[80%] mx-auto px-2 lg:mx-20">
 
 
 <div>
@@ -140,7 +142,7 @@ export default function ContactModal({ isOpen, setIsOpen }) {
                         <textarea 
                             name="body"
                             style={{resize : "none"}} 
-                            className="w-full p-2 bg-[#EEEEEE]" 
+                            className="w-full p-2 bg-[#EEEEEE] ml-1" 
                             rows={4} 
                             placeholder="Message" 
                             value={formData.body}
@@ -148,7 +150,7 @@ export default function ContactModal({ isOpen, setIsOpen }) {
                         />
                     </div>
                     <div className=" mb-10 mt-4  mx-auto  flex justify-center" onClick={handleSubmit}>
-                        <Button className="!text-white w-[200px] h-[70px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
+                        <Button className="!text-white w-[200px] h-[72px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
                             Submit
                         </Button>
                     </div>
