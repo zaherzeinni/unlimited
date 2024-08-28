@@ -32,7 +32,7 @@ export default function SectionOne() {
               <img src="/sectionOneTitle.png" className="w-[90%] sm:w-[50%]" />
             </div> */}
 
-<p className="raleway md:mt-52 lg:mt-20 leading-none sm:w-[550px] sm:text-[35px] w-[100%] mb-1 sm:mb-0 text-[25px]  text-wrap">
+<p className="raleway sm:mt-44 md:mt-52 lg:mt-20 leading-none sm:w-[550px] sm:text-[35px] w-[100%] mb-1 sm:mb-0 text-[25px]  text-wrap">
           Revolutionizing the consultancy and management experience,
         </p>
 
