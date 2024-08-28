@@ -30,13 +30,19 @@ export default function SectionThree() {
     // }}
     
     >
-      <div className=" bg-[#f5f5f5] w-full  bg-[url('/clip-path-group.png')] bg-contain ">
+
+{/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[38px] text-[27px]">UN</span> */}
+
+
+      <div className=" bg-[#fff] w-full  bg-[url('/clip-path-group.png')] bg-contain ">
         <img
           src="/sec-three-green.png"
           className="-mt-20 relative  hidden sm:block h-[150px] object-cover md:right-[100%] lg:right-[-90%] xl:left-[90%] md:left-[85%] sm:left-[70%]  "
         />
         <div className="w-[90%] mx-auto pt-8 ">
           <img src="/sectt.png" className=" w-full sm:w-1/4 " />
+
+
           <p className="sm:ml-auto mt-4 sm:mt-0 sm:w-1/2   font-raleway">
             At <b>Unlmtd</b> our collective success starts with you. We work with top independent agencies and industy experts to unlock growth, innovation and strategic business opportunities that enable you to excel in the competitive global marketplace.
           </p>

@@ -17,35 +17,42 @@ export default function SectionTwo() {
   alt="wallpaper" className="absolute !bg-opacity-5 !bg-whit  inset-0 w-full h-full object-cover mix-blend-overla z-50"/>
 
         <div className="sm:w-[90%] mx-auto mt-12 !mb-28">
-          <div className="flex flex-col sm:flex-row  gap-4">
+          <div className="flex sm:flex-row  gap-1">
             <img
-              className="object-cover hidden sm:block w-[250px] h-[280px] p-2"
-              src="/A_image.png"
+              className="object-cover hidden1 sm:block1 w-[130px] h-[150px] sm:w-[160px] sm:h-[180px] md:w-[240px] md:h-[280px] p-2"
+              src="/Subtract.svg"
             />
-            <div className="flex gap-4 sm:hidden">
-              <img
-                className="object-cover w-[80px] sm:w-[150px]"
-                src="/A_image.png"
-              />
-              <img
-                className="object-cover w-[280px] h-[120px] sm:hidden"
-                src="/sectionThreeTitle.png"
-              />
-            </div>
-            <div>
-              <img
-                className="object-cover hidden sm:block w-1/2"
-                src="/sec3td.png"
-              />
-              <p className="text-white p-4 sm:p-0  sm:w-1/2 text-[16px] mt-4 font-extralight">
+
+
+<div className='text-white my-10 sm:my-0 '>
+           
+           <p className='raleway mt-5    sm:ml-4 md:ml-3  text-[20px] w-[90%] sm:w-auto sm:text-[30px] md:text-[40px] lg:text-[50px] leading-none'>Business excellence made</p>
+           
+           <div>              
+        <div className='flex items-center justify-start sm:ml-4   md:ml-3  leading-none '>
+        <div className='flex '>
+        <span className="font-raleway text-[#82C809]  text-[20px] font-extrabold  sm:text-[38px] md:text-[50px] ">UN</span>
+        <div className="staatliches-regular text-[20px] sm:text-[40px] md:text-[50px] items-end flex  !font-bold  ">BELIEVABLY</div>
+        <p className='raleway sm:ml-3 text-[18px] sm:text-[30px] md:text-[40px] lg:text-[50px] items-end flex'>easy</p>
+        
+        
+  
+        </div>
+       
+
+        </div>
+        <p className="text-white p-2 sm:p-0 sm:ml-4 -ml-32 sm:w-[80%] text-[14px] w-[300px] md:text-[22px] mt-10 sm:mt-1  md:w-[80%] lg:w-[50%] font-extralight">
                 Give your business the <span className="font-bold">Unlmtd</span>{" "}
                 advantage by leveraging diverse skills with tailored strategies
                 and innovative problem-solving to address your unique
                 challenges.
               </p>
-            </div>
+</div>
+
+      </div>
+
           </div>
-          <div className="text-white hidden sm:flex   space-x-4 sm:space-x-24  justify-center text-center mt-10 lg:mt-24">
+          <div className="text-white hidden sm:flex  lg:text-[32px]  space-x-4 sm:space-x-24  justify-center text-center mt-10 lg:mt-24">
             <div className="space-y-16 text-end">
        
             <div>Marketing and Communication</div>
