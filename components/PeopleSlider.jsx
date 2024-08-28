@@ -31,9 +31,10 @@ export default function DigiSuggestion({}) {
     speed: 500,
     // rows: 2,
     // slidesPerRow: 2,
-    rows: 2,
+    rows: 1,
     slidesPerRow: 1,
     autoplay:true,
+    arrows: false,
     autoplay: {
       delay: 100,
     },
@@ -49,7 +50,8 @@ export default function DigiSuggestion({}) {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: false,
+          dots: true,
+          
         },
       },
       {
@@ -58,7 +60,7 @@ export default function DigiSuggestion({}) {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          
+          dots: true,
         },
       },
       {
@@ -67,6 +69,7 @@ export default function DigiSuggestion({}) {
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2,
+          dots: true,
         },
       },
       {
@@ -74,6 +77,7 @@ export default function DigiSuggestion({}) {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
@@ -85,8 +89,8 @@ export default function DigiSuggestion({}) {
           پیشنهاد دیجی‌کالا
         </h5> */}
 
-      <div className="w-full pb-4  min-h-80 cursor-pointer mb-5 overflow-hidden">
-        <Slider {...settings}>
+      <div className="w-full pb-4 mt-10 min-h-80 cursor-pointer mb-5 overflow-hidden">
+        <Slider  {...settings} className="mb-5">
           {people.map((product, index) => {
             return (
               <Fragment key={index}>
@@ -116,9 +120,9 @@ export default function DigiSuggestion({}) {
                                  lg:w-[290px] lg:h-[230px] lg:mt-[26px] lg:-right-4
     "
                       >
-                        <div className="mt-10 font-bold lg:text-[30px]   lg:relative lg:left-5 lg:mt-12 ">
+                        <div className="mt-10 font-bold lg:text-[30px]   lg:relative lg:left-5 lg:mt-20 ">
                           {product?.first}
-                          <div className="font-normal">{product?.last}</div>
+                          <div className="font-normal -mt-2">{product?.last}</div>
                         </div>
                       </div>
                     </div>

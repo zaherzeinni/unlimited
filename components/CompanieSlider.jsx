@@ -30,6 +30,8 @@ export default function DigiSuggestion({}) {
     slidesToScroll: 1,
     speed: 500,
     autoplay:true,
+    arrows: false,
+    dots: true,
     autoplay: {
       delay: 100,
     },
@@ -87,7 +89,7 @@ export default function DigiSuggestion({}) {
         </h5> */}
        
         <div className="w-full min-h-80 cursor-pointer !mb-24 ">
-          <Slider {...settings}>
+          <Slider {...settings}  className="mb-5">
             {companyData?.map((product, index) => {
               return (
                 //   <Fragment key={index}>
@@ -113,7 +115,7 @@ w-[100px] h-[170px] rounded-full    lg:w-[170px] lg:h-[250px]  "
                         lg:w-[225px] lg:h-[170px] 
 "
                       >
-                        <div className="mt-1">
+                        <div className="mt-0">
                           <img
                             src={product?.image}
                             className="object-contain w-[65px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg"

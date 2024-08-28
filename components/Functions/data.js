@@ -90,7 +90,7 @@ export const people = [
       id: 8,
       name: "Umer R", 
       first:"Umer",
-      last:"R",
+      last:"RAZZAK",
      image: "/people/Umer-cl.jpg",
      title:"Creative Strategy Director",
      link:"",

@@ -15,13 +15,14 @@ export default function ClientsLogo() {
 
           
             <span className="!mr-2">  We're</span>
+            <span className="font-raleway text-[#82C809] font-extrabold  lg:text-[60px] sm:text-[30px] text-[30px]">UN</span>
             <span className="text-[#191919] inline-block  uppercase font-semibold fle items-center">
 
            
-            <img
+            {/* <img
                   class="xl:w-[72px]  inline-block object-fi xl:h-[46px] w-[25px] h-[25px] "
                   src="/UN.png"
-                />
+                /> */}
                 Matched
 
 

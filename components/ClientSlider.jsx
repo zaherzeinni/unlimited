@@ -81,7 +81,6 @@ export default function ClientSlider({}) {
     { id: 53, image: "/Done/dcf.png" },
 
 
-    { id: 54, image: "/Done/op.png" },
     { id: 55, image: "/Done/pandg.png" },
     { id: 56, image: "/Done/qasrwatan.png" },
     { id: 57, image: "/Done/renault.png" },
@@ -133,12 +132,13 @@ export default function ClientSlider({}) {
     dots: true,
     speed: 500,
     autoplay: true,
+    arrows: false,
     autoplay: {
       delay: 100,
     },
     // rows: 2,
 
-    rows: 4,
+    rows: 3,
     slidesPerRow: 1,
 
     responsive: [
@@ -195,14 +195,14 @@ export default function ClientSlider({}) {
         />
 
         <div className="w-full cursor-pointer mb-5 mt-16">
-          <Slider {...settings}>
+          <Slider {...settings}  className="mb-5">
             {products.map((product, index) => {
               return (
                 //   <Fragment key={index}>
 
                 <div key={index}>
                   <img
-                    class="md:w-[120px] py-2 object-contain md:h-[120px]  w-[77px] h-[77px]"
+                    class="md:w-[120px] py-2 object-contain md:h-[120px]  w-[77px] h-[77px] grayscale hover:grayscale-0"
                     src={product?.image}
                   />
                 </div>

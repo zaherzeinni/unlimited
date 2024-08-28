@@ -31,7 +31,7 @@ export default function SectionThree() {
     
     >
 
-{/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[38px] text-[27px]">UN</span> */}
+
 
 
       <div className=" bg-[#fff] w-full  bg-[url('/clip-path-group.png')] bg-contain ">
@@ -40,10 +40,29 @@ export default function SectionThree() {
           className="-mt-20 relative  hidden sm:block h-[150px] object-cover md:right-[100%] lg:right-[-90%] xl:left-[90%] md:left-[85%] sm:left-[70%]  "
         />
         <div className="w-[90%] mx-auto pt-8 ">
-          <img src="/sectt.png" className=" w-full sm:w-1/4 " />
+          {/* <img src="/sectt.png" className=" w-full sm:w-1/4 " /> */}
 
 
-          <p className="sm:ml-auto mt-4 sm:mt-0 sm:w-1/2   font-raleway">
+
+{/* ---------------div of title----------------- */}
+<div className='mt-5 relative mb-5'>
+         <p className="raleway  leading-none sm:w-[550px] md:w-[750px] sm:text-[35px] w-[80%] text-[27px] sm:ml-0 ml-0  text-wrap">
+         This is what an</p> 
+
+        <div className='flex items-center justify-start sm:ml-0 ml-0 leading-none '>
+        <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[50px] text-[35px]">UN</span>
+        <div className="staatliches-regular sm:text-[50px] text-[35px] !font-bold  ">PARALLED</div>
+        </div>
+        <div className='raleway  leading-none sm:w-[550px] md:w-[750px] sm:text-[35px] w-[100%] text-[27px]  text-wrap sm:ml-0 ml-0'>ecosystem looks like</div>
+</div>
+
+
+
+
+
+
+
+          <p className="sm:ml-auto mt-4 sm:mt-0 sm:w-1/2  md:text-[22px] font-raleway">
             At <b>Unlmtd</b> our collective success starts with you. We work with top independent agencies and industy experts to unlock growth, innovation and strategic business opportunities that enable you to excel in the competitive global marketplace.
           </p>
 
