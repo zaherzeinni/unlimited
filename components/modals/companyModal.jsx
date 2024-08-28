@@ -45,16 +45,14 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                 as="h3"
                 className="text-lg font-medium mt-6 pr-10 pt-3  border-t-[100px] -top-12 !  w-full  relative rounded-2xl border-red-700 text-end flex justify-end leading-6 text-gray-900"
               >
-               <IoMdClose className="text-3xl  relative -top-20 text-whit cursor-pointer" onClick={closeModal} />
+               <IoMdClose className="text-3xl  relative -top-20 text-white cursor-pointer" onClick={closeModal} />
               </Dialog.Title>
-                  <div className=" flex cursor-pointer gap-12 md:flex-row flex-col ">
+                  <div className=" flex cursor-pointer gap-12 md:flex-row flex-col ml-[15%] ">
                     <div className="relative ">
                       <img
                         src={company?.image}
                         alt="Card people"
-                        className=" 
- 
-object-contain w-[100px] h-[50px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg "
+                        className=" object-contain w-[130px] h-[80px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg "
                       />
                       {company?.link !== '' &&
 
