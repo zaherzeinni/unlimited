@@ -33,13 +33,19 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel  className="w-full mt-24 !max-w-[80%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <div className="mt-2 md:px-4 md:py-4  ">
+
+
+
+
+
+    
+              <Dialog.Panel  className="  w-full  mt-24 !max-w-[80%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <div className="mt-2 md:1px-4 md:1py-4 -mx-10  ">
                 <Dialog.Title
                 as="h3"
-                className="text-lg font-medium text-end flex justify-end leading-6 text-gray-900"
+                className="text-lg font-medium mt-6 pr-10 pt-3  border-t-[100px] -top-12 !  w-full  relative rounded-2xl border-red-700 text-end flex justify-end leading-6 text-gray-900"
               >
-               <IoMdClose className="text-3xl  cursor-pointer" onClick={closeModal} />
+               <IoMdClose className="text-3xl  relative -top-20 text-whit cursor-pointer" onClick={closeModal} />
               </Dialog.Title>
                   <div className=" flex cursor-pointer gap-12 md:flex-row flex-col ">
                     <div className="relative ">
@@ -79,7 +85,7 @@ object-contain w-[100px] h-[50px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg "
                       </div>
                       <div className="w-[90%] text-[12px] md:text-[18px]">
                         
-                       {company.desc}
+                       {company?.desc}
                       </div>
                     </div>
                   </div>
