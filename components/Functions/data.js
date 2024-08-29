@@ -62,9 +62,9 @@ export const people = [
   },
   { 
     id: 6, 
-    name: "Amal Swiedan",
+    name: "Amal Sweidan",
     first:"Amal",
-    last:"Swiedan",
+    last:"Sweidan",
     title:'Business Consultant & Fractional Executive', 
     link:"https://www.linkedin.com/in/amalsweidan/" ,  
     image: "/people/Amal-Sweidan-pic.jpeg", 

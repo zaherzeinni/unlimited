@@ -66,7 +66,7 @@ export default function Footer() {
         </div>
         <div className="pt-32 pb-14 sm:pb-8">
           <div className="flex mb-14 md:mb-24 flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="sm:flex hidde  text-[34px]  items-center font-normal  text-[#191919]  xl:text-[65px]">
+            <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  xl:text-[65px]">
               Unlock Your
               <div className="flex items-center mx-2">
                 {/* <img
@@ -74,7 +74,7 @@ export default function Footer() {
                   src="/UN.png"
                 /> */}
 
-                <span className="font-raleway text-[#82C809] font-extrabold  md:text-[60px]1 xl:text-[65px] -ml-2 text-[34px]">UN</span>
+                <span className="font-raleway sm:ml-2 text-[#82C809] font-extrabold  md:text-[60px]1 xl:text-[65px] -ml-2 text-[34px]">UN</span>
                 
                 <span className="text-[#191919]  uppercase font-semibold">
                   lmtd
@@ -102,7 +102,7 @@ export default function Footer() {
                 hello@weareunlmtd.com
               </p>
 
-              <div className="flex gap-8  sm:text-[40px]">
+              <div className="flex1 gap-8  sm:text-[40px] hidden">
                 <div>LinkedIn</div>
                 <div>Instagram</div>
               </div>
@@ -115,12 +115,12 @@ export default function Footer() {
 
               <div className="flex gap-8  !text-black !fomt-thin  text-[18px]">
                 <div>
-                  <Link className=" !no-underline !text-black !fomt-thin" href={"/privacy"}>
+                  <Link className=" !no-underline !text-black !font-thin" href={"/privacy"}>
                     Privacy
                   </Link>
                 </div>
                 <div>
-                  <Link className="!no-underline !text-black !fomt-thin" href={"/cookies"}>
+                  <Link className="!no-underline !text-black !font-thin" href={"/cookies"}>
                     Cookie Disclaimer
                   </Link>
                 </div>

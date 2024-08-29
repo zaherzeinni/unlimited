@@ -116,7 +116,7 @@ export default function Navbar() {
   
 
   return (
-    <div className=" h-[555px]  z-50  md:h-[800px]     !overflow-x-hidden  ">
+    <div className=" h-[555px]  z-50  md:h-[800px]  xl:w-[1920px] xl:h-[1080px]   !overflow-x-hidden  ">
       <div
         style={{
           backgroundImage:
