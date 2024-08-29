@@ -74,12 +74,12 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                       <img
                         src={company?.image}
                         alt="Card people"
-                        className=" object-contain w-[130px] h-[80px] lg:w-[30%] lg:h-[30%] lg:w-[200px]1 lg:h-[100px]1  z-10 rounded-lg "
+                        className=" object-contain w-[130px] h-[80px] 1lg:w-[30%] 1lg:h-[30%] lg:w-[200px]1 lg:h-[100px]1  z-10 rounded-lg "
                       />
                       {company?.link !== '' &&
 
 <div className=" text-[12px] md:text-[18px] font-thin mt-12  ">
-  <a className="!text-black flex gap-2 items-center  !no-underline" href={company?.link} target="_blank">
+  <a className="!text-black flex gap-2 items-center  underline" href={company?.link} target="_blank">
 
 <span> <img src="/link.png" alt="" /> </span>
   <div className="text-sm md:w-52 w-full">{company?.link}</div>
