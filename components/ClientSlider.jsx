@@ -19,7 +19,6 @@ export default function ClientSlider({}) {
     { id: 5, image: "/Done/unilever.png" },
     { id: 6, image: "/Done/mondelez.png" },
     { id: 7, image: "/Done/sony.png" },
-    { id: 8, image: "/Done/visa.png" },
     { id: 9, image: "/Done/etisalat.png" },
     { id: 10, image: "/Done/zain.png" },
     { id: 11, image: "/Done/emirates.png" },
@@ -61,8 +60,6 @@ export default function ClientSlider({}) {
     { id: 41, image: "/Done/majid.png" },
 
 
-  
-    { id: 42, image: "/Done/ford.png" },
 
     { id: 43, image: "/Done/hershey.png" },
 
@@ -81,31 +78,17 @@ export default function ClientSlider({}) {
     { id: 53, image: "/Done/dcf.png" },
 
 
-    { id: 55, image: "/Done/pandg.png" },
     { id: 56, image: "/Done/qasrwatan.png" },
-    { id: 57, image: "/Done/renault.png" },
-    { id: 58, image: "/Done/rta.png" },
     { id: 59, image: "/Done/samba.png" },
-    { id: 60, image: "/Done/saudia.png" },
     { id: 61, image: "/Done/seaworld.png" },
     { id: 62, image: "/Done/sib.png" },
     { id: 63, image: "/Done/snbc.png" },
     { id: 64, image: "/Done/SOLICO-FOOD MANAGEMENT.png" },
-    { id: 65, image: "/Done/sony.png" },
-    { id: 66, image: "/Done/stc.png" },
     { id: 67, image: "/Done/tezo.png" },
-    { id: 68, image: "/Done/toyota.png" },
-    { id: 69, image: "/Done/turkishal.png" },
-    { id: 70, image: "/Done/unilever.png" },
     { id: 71, image: "/Done/un.png" },
-    { id: 72, image: "/Done/visa.png" },
     { id: 73, image: "/Done/wb.png" },
     { id: 74, image: "/Done/watania.png" },
     { id: 75, image: "/Done/wujha.png" },
-    { id: 76, image: "/Done/yap.png" },
-    { id: 77, image: "/Done/yas.png" },
-    { id: 78, image: "/Done/zain.png" },
-    { id: 79, image: "/Done/zm.png" },
     { id: 80, image: "/Done/has.png" },
     
     { id: 81, image: "/Done/Al Ula Logo.png" },

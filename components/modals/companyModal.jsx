@@ -60,7 +60,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
   <a className="!text-black flex gap-2 items-center  !no-underline" href={company?.link} target="_blank">
 
 <span> <img src="/link.png" alt="" /> </span>
-  <div className="text-sm md:w-48">{company?.link}</div>
+  <div className="text-sm md:w-52 w-full">{company?.link}</div>
   </a>
 </div>
 }

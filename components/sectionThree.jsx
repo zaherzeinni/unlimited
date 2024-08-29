@@ -50,7 +50,11 @@ export default function SectionThree() {
          This is what an</p> 
 
         <div className='flex items-center justify-start sm:ml-0 ml-0 leading-none '>
-        <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[50px] text-[35px]">UN</span>
+        {/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[50px] text-[35px]">UN</span> */}
+        <img
+                  class=" w-[29px] h-[27px] mt-[1px] sm:w-[40px] sm:h-[37px] sm:mb-[1px]  md:w-[45px] md:h-[40px] md:mt-[1px] md:ml-1  inline-block object-fit "
+                  src="/UN.png"
+                />
         <div className="staatliches-regular sm:text-[50px] text-[35px] !font-bold  ">PARALLED</div>
         </div>
         <div className='raleway  leading-none sm:w-[550px] md:w-[750px] sm:text-[35px] w-[100%] text-[27px]  text-wrap sm:ml-0 ml-0'>ecosystem looks like</div>

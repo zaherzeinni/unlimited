@@ -178,7 +178,7 @@ export default function Navbar() {
                 </button>
               </li>
             </menu>
-            <ul className=" !cursor-pointer lg:text-[20px] z-50 hidden sm:flex gap-12 list-none items-center text-white">
+            <ul className=" !cursor-pointer lg:text-[20px] z-50 hidden sm:flex gap-10 ml-2 list-none items-center text-white">
               <li
                 onClick={() => {
                   const element = document.getElementById("about");
@@ -250,14 +250,23 @@ export default function Navbar() {
               {/* <img src="/titleDesk.png" /> */}
 
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <p class="sm: hidde cursor-pointer1  text-[22px]  items-center font-normal  text-white  lg:text-[84px] -mt-20 lg:mt-2 ">
+                <p class="sm: hidde cursor-pointer1  text-[22px]  items-center font-normal  text-white  lg:text-[84px] -mt-20 lg:-mt-32 ">
                   WE ARE
                   <div class="flex  !items-center mx-2">
-                    {/* <img
-                      class="lg:w-[165px] lg:h-[91px] w-[34px] sm:w-[40px] sm:h-[26px]  object-center h-[22px] md:ml-2 md:-mb-2"
+                    <img
+                      class=" h-[20px] w-[34px] mr-[2px] sm:w-[40px] sm:h-[26px] md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center "
                       src="/btn2-big.png"
-                    /> */}
-                    <span className="font-raleway -ml-2  sm:ml-0 text-[#82C809] font-extrabold lg:text-[100px] xl:text-[130px]   sm:text-[38px] text-[23px]">UN</span>
+                    />
+                    
+                    {/* <span className="font-raleway -ml-2  sm:ml-0 text-[#82C809] font-extrabold lg:text-[100px] xl:text-[130px]   sm:text-[38px] text-[23px]">UN</span> */}
+
+
+                    {/* <img
+                  class=" w-[29px] h-[27px] mt-[1px] sm:w-[40px] sm:h-[37px] sm:mb-[1px]  md:w-[45px] md:h-[40px] md:mt-[1px] md:ml-1  inline-block object-fit "
+                  src="/UN.png"
+                /> */}
+
+                
                     {/* <span class="text-white lg:text-[155px] text-[40px]  uppercase font-semibold">{text}</span>  */}
 
                     <motion.span
@@ -308,7 +317,7 @@ export default function Navbar() {
                     alt=""
                   /> */}
 
-<span className="font-raleway text-[#82C809] font-extrabold  text-[18px]">UN</span>
+<span className="font-raleway text-[#82C809] font-extrabold  text-[18px]">Un</span>
                    
                 </span>
                 lock Potential

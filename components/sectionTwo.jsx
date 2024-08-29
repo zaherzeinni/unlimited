@@ -34,7 +34,7 @@ export default function SectionTwo() {
         {/* <span className="font-raleway text-[#82C809]  text-[20px] font-extrabold  sm:text-[38px] md:text-[50px] ">UN</span> */}
        
         <img
-                  class="w-[25px] mt-[2px] sm:mt-1 h-[16px] sm:w-[40px] sm:h-[33px] md:w-[48px] md:h-[40px]   inline-block object-fit  "
+                  class="w-[25px] mt-[2px] sm:mt-[5px] h-[16px] sm:w-[40px] sm:h-[33px] md:w-[48px] md:h-[40px]   inline-block object-fit  "
                   src="/UN.png"
                 />
         <div className="staatliches-regular text-[20px] sm:text-[40px] md:text-[50px] items-end flex  !font-bold  ">BELIEVABLY</div>

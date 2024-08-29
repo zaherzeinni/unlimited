@@ -53,7 +53,7 @@ export default function Footer() {
               className="bg-[#82C809]  group hover:bg-white    w-full  text-center lg:w-[300px] md:h-[70px] py-3 rounded-md cursor-pointer px-4  md:px-16  justify-center flex items-center">
                 {/* <img className="" src="/btn.png" /> */}
                
-                <span className="font-raleway text-[#080852] group-hover:text-[#82C809] font-semibold  md:text-[22px]1 text-[18px]">UN</span>
+                <span className="font-raleway text-[#080852] group-hover:text-[#82C809] font-semibold  md:text-[22px]1 text-[18px]">Un</span>
                 <span className="text-white group-hover:text-[#080852]  md:text-[22px]1  text-[18px] font-semibold ">lock Potential</span>
                 
               </button>
@@ -69,12 +69,12 @@ export default function Footer() {
             <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  xl:text-[65px]">
               Unlock Your
               <div className="flex items-center mx-2">
-                {/* <img
-                  className="object-fit md:w-[45px] md:h-[28px] lg:w-[45px] lg:h-[28px] lg:mb-0 xl:w-[72px] xl:h-[48px] w-[27px] h-[27px] md:ml-2 md:-mb-0 xl:mb-0"
+                <img
+                  className="object-fit mt-[2px] w-[30px] h-[27px] md:w-[40px] md:h-[28px] sm:mt-[1px] lg:w-[45px] lg:h-[28px] lg:mb-0 xl:w-[72px] xl:h-[48px]  md:ml-2 md:-mb-0 xl:mb-0"
                   src="/UN.png"
-                /> */}
-
-                <span className="font-raleway sm:ml-2 text-[#82C809] font-extrabold  md:text-[60px]1 xl:text-[65px] -ml-2 text-[34px]">UN</span>
+                />
+{/* 
+                <span className="font-raleway sm:ml-2 text-[#82C809] font-extrabold  md:text-[60px]1 xl:text-[65px] -ml-2 text-[34px]">UN</span> */}
                 
                 <span className="text-[#191919]  uppercase font-semibold">
                   lmtd

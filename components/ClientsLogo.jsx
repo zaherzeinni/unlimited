@@ -18,7 +18,7 @@ export default function ClientsLogo() {
             {/* <span className="font-raleway text-[#82C809] font-extrabold  lg:text-[60px] sm:text-[30px] text-[30px]">UN</span> */}
            
                  <img
-                  class="sm:w-[29px] sm:h-[23px] sm:mb-1 xl:w-[72px] xl:mb-2 xl:ml-1 mb-2 inline-block object-fit xl:h-[46px] lg:w-[30px] lg:h-[23px] lg:mb-1 w-[29px] h-[23px] "
+                  class="sm:w-[29px] sm:h-[23px] sm:mb-[5px] xl:w-[72px] xl:ml-2 xl:mb-[8px] mb-[6px] inline-block object-fit xl:h-[46px] lg:w-[30px] lg:h-[23px] lg:mb-1 w-[29px] h-[23px] "
                   src="/UN.png"
                 />
            
