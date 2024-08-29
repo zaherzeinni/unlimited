@@ -29,9 +29,9 @@ export default function Footer() {
                   src="/UN.png"
                 /> */}
 
-                <span className="font-raleway text-[#82C809] font-extrabold  md:text-[60px] lg:text-[70px] text-[30px]">UN</span>
+                <span className="font-raleway text-[#82C809] font-extrabold  md:text-[60px] xl:text-[70px] text-[30px]">UN</span>
                 
-                <span className="font-bold text-white text-[30px] md:text-[60px] lg:text-[70px] uppercase font-raleway">
+                <span className="font-bold text-white text-[30px] md:text-[60px] xl:text-[70px] uppercase font-raleway">
                   stoppable?
                 </span>
               </div>
