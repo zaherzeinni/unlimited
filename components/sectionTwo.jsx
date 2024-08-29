@@ -31,7 +31,12 @@ export default function SectionTwo() {
            <div>              
         <div className='flex items-center justify-start sm:ml-4   md:ml-3  leading-none '>
         <div className='flex '>
-        <span className="font-raleway text-[#82C809]  text-[20px] font-extrabold  sm:text-[38px] md:text-[50px] ">UN</span>
+        {/* <span className="font-raleway text-[#82C809]  text-[20px] font-extrabold  sm:text-[38px] md:text-[50px] ">UN</span> */}
+       
+        <img
+                  class="w-[25px] h-[16px] sm:w-[40px] sm:h-[33px] md:w-[48px] md:h-[41px]   inline-block object-fit  "
+                  src="/UN.png"
+                />
         <div className="staatliches-regular text-[20px] sm:text-[40px] md:text-[50px] items-end flex  !font-bold  ">BELIEVABLY</div>
         <p className='raleway sm:ml-3 text-[18px] sm:text-[30px] md:text-[40px] lg:text-[50px] items-end flex'>easy</p>
         

@@ -110,15 +110,15 @@ w-[100px] h-[170px] rounded-full    lg:w-[170px] lg:h-[250px]  "
                           setCompany(product);
                         }}
 
-                        className=" bg-white   px-8 ml-4 rounded-3xl  relative h-[100px]  font-bold text-wrap   content-center  
+                        className=" bg-white   px-4 ml-4 rounded-3xl  relative h-[80px]  font-bold text-wrap   content-center  
 
-                        lg:w-[225px] lg:h-[170px] 
+                        lg:w-[180px] lg:h-[110px] lg:mt-6
 "
                       >
                         <div className="mt-0">
                           <img
                             src={product?.image}
-                            className="object-contain w-[65px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg"
+                            className="object-contain w-[65px] lg:w-[90px] lg:h-[55px]  z-10 rounded-lg"
                           />
                         </div>
                       </div>
