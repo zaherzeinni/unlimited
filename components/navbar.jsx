@@ -178,7 +178,7 @@ export default function Navbar() {
                 </button>
               </li>
             </menu>
-            <ul className=" !cursor-pointer z-50 hidden sm:flex gap-12 list-none items-center text-white">
+            <ul className=" !cursor-pointer lg:text-[20px] z-50 hidden sm:flex gap-12 list-none items-center text-white">
               <li
                 onClick={() => {
                   const element = document.getElementById("about");
