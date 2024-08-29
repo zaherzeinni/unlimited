@@ -7,6 +7,28 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
     setIsOpen(false);
   }
 
+
+  const cardColor = `${company?.title === 'JURNEE' ? 'border-[#0101FF]' : company?.title === 'Lava Brands' ? 'border-red-500' :    
+  company?.title === 'DAF' ? 'border-black' : 
+  company?.title === 'CMD+' ? 'border-black' : 
+  company?.title === 'ADCREATORS MENA' ? 'border-black' : 
+  company?.title === 'The Bold Option' ? 'border-yellow-500' : 
+  company?.title === 'Livingroomksa' ? 'border-[#FFBC00]' : 
+  company?.title === 'Black Rhino' ? 'border-black' : 
+  company?.title === 'Mia' ? 'border-black' : 
+  company?.title === 'Vidmatic' ? 'border-black' : 
+  company?.title === 'Mindfield' ? 'border-[#00ADDD]' : 
+  company?.title === 'Antworks' && 'border-[#A60000]'  
+
+  } `;
+
+// Check if the text length exceeds 300 characters
+   const isLongText = company?.desc.length > 300;
+ // Determine the class based on the text length
+ const textClass = isLongText ? 'text-base' : 'text-base';
+
+
+
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-10 " onClose={closeModal}>
@@ -43,7 +65,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                 <div className="mt-2 md:1px-4 md:1py-4 -mx-10  ">
                 <Dialog.Title
                 as="h3"
-                className="text-lg font-medium mt-6 pr-10 pt-3  border-t-[100px] -top-12 !  w-full  relative rounded-2xl border-red-700 text-end flex justify-end leading-6 text-gray-900"
+                className={`text-lg font-medium mt-6 pr-10 pt-3  border-t-[100px] -top-12 !  w-full  relative rounded-2xl text-end flex justify-end leading-6 text-gray-900      ${cardColor}    `}
               >
                <IoMdClose className="text-3xl  relative -top-20 text-white cursor-pointer" onClick={closeModal} />
               </Dialog.Title>
@@ -52,7 +74,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                       <img
                         src={company?.image}
                         alt="Card people"
-                        className=" object-contain w-[130px] h-[80px] lg:w-[140px] lg:h-[55px]  z-10 rounded-lg "
+                        className=" object-contain w-[130px] h-[80px] lg:w-[30%] lg:h-[30%] lg:w-[200px]1 lg:h-[100px]1  z-10 rounded-lg "
                       />
                       {company?.link !== '' &&
 
@@ -81,7 +103,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                           <span className=" font-bold">{company?.title} </span>
                         </p>
                       </div>
-                      <div className="w-[90%] text-[12px] md:text-[18px]">
+                      <div className={`${textClass} w-[90%] text-[12px] md:text-[18px] md:mr-16 lg:mr-80 xl:mr-96 2xl:mr-[700px]`}>
                         
                        {company?.desc}
                       </div>
@@ -89,15 +111,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
                   </div>
                 </div>
 
-                {/* <div className="mt-4">
-                  <button
-                    type="button"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
-                    onClick={closeModal}
-                  >
-                    Close
-                  </button>
-                </div> */}
+  
               </Dialog.Panel>
             </Transition.Child>
           </div>
