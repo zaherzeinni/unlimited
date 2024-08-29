@@ -40,7 +40,7 @@ export default function DigiSuggestion({}) {
     rows: 2,
     slidesPerRow: 1,
 
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 3,
  
 
@@ -48,7 +48,7 @@ export default function DigiSuggestion({}) {
       {
         breakpoint: 1450,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 5,
           slidesToScroll: 3,
           infinite: true,
         
@@ -66,7 +66,7 @@ export default function DigiSuggestion({}) {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 2,
           initialSlide: 2,
         },

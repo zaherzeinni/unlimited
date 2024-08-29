@@ -47,7 +47,7 @@ export default function DigiSuggestion({}) {
       {
         breakpoint: 1300,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           infinite: true,
           dots: true,
