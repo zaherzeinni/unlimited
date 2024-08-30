@@ -66,11 +66,11 @@ export default function Footer() {
         </div>
         <div className="pt-32 pb-14 sm:pb-8">
           <div className="flex mb-14 md:mb-24 flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  xl:text-[65px]">
+            <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  xl:text-[40px]">
               Unlock Your
               <div className="flex items-center mx-2">
                 <img
-                  className="object-fit mb-[4px] w-[30px] h-[27px] md:w-[40px] md:h-[28px] sm:-mt-[4px] lg:w-[45px] lg:h-[28px] lg:mb-0 xl:w-[72px] xl:h-[50px] xl:mb-2 md:ml-2 md:-mb-0 xl:mb-0"
+                  className="object-fit mb-[4px] w-[30px] h-[27px] md:w-[40px] md:h-[29px] sm:-mt-[4px] md:ml-2 -ml-1 sm:ml-0 md:-mb-0 xl:mb-0"
                   src="/UN.png"
                 />
 {/* 
@@ -79,7 +79,7 @@ export default function Footer() {
                 <span className="text-[#191919]  uppercase font-semibold">
                   lmtd
                 </span>{" "}
-                <span className="mx-2">Potential</span>
+                <span className="mx-2 ">Potential</span>
               </div>
             </p>
 
@@ -98,7 +98,7 @@ export default function Footer() {
               <p 
               onClick={() => window.location = 'mailto:hello@weareunlmtd.com'}
               
-              className="sm:text-[40px] mt-2 sm:mt-0 text-[20px] cursor-pointer">
+              className="sm:text-[30px] mt-2 sm:mt-0 text-[20px] cursor-pointer">
                 hello@weareunlmtd.com
               </p>
 

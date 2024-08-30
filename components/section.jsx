@@ -19,7 +19,7 @@ export default function SectionOne() {
 <img 
     src='/clip-path-group.png' 
     alt='un background' 
-    className='absolute right-0 hidde lg:block  object-fill   bg-cover  bg-[#f5f5f5]1 bg-[#fff]  md:bg-transparent  transform -translate-y-1/2 !w-full lg:!w-1/2 !h-full top-[550px] max-w-full'
+    className='absolute right-0 hidde lg:block  object-fill   bg-cover  bg-[#f5f5f5]1 bg-[#fff]  md:bg-transparent  transform -translate-y-1/2 !w-full lg:!w-1/2 !h-[1200px] top-[550px] max-w-full'
   />
 
 <div className=" w-full h-full">
@@ -41,7 +41,7 @@ export default function SectionOne() {
         {/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[38px] text-[27px]">UN</span> */}
 
         <img
-                  class=" mt-[2px] mr-[2px] sm:mt-[5px] w-[27px] h-[21px] sm:w-[40px]1 sm:h-[33px]1 sm:w-[38px] sm:h-[30px] mb-2  inline-block object-fit  "
+                  class=" mt-[2px] mr-[2px] sm:mt-[5px] w-[27px] h-[21px] sm:w-[40px]1 sm:h-[33px]1 sm:w-[40px] sm:h-[30px] mb-2  inline-block object-fit  "
                   src="/UN.png"
                 />
           <span className="staatliches-regular sm:text-[38px] text-[27px] w-[500px] !font-bold  ">
@@ -57,7 +57,7 @@ export default function SectionOne() {
             <div className="flex flex-col-reverse gap-4  sm:flex-row md:gap-14 mt-8 ">
               <div className="flex  gap-8 md:w-[100%] justify-center">
                 <div className="flex  flex-col w-1/2">
-                  <span className="lg:w-1/2  font-tajwal text-[#82C809] font-medium text-[40px]">
+                  <span className="lg:w-1/2  font-tajwal text-[#82C809] font-bold text-[40px]">
                   
 
                     <CountUp
@@ -75,14 +75,14 @@ export default function SectionOne() {
                 prefix=" " //left side of counter
                 suffix="" //right side of counter
               ></CountUp>
-
++
 
 
                   </span>
                   <span className="text-[15px]">Years&nbsp;on the market</span>
                 </div>
                 <div className="  flex flex-col w-1/2">
-                  <span className="lg:w-1/2 font-tajwal text-[#82C809] font-medium text-[45px]">
+                  <span className="lg:1w-1/2 font-tajwal text-[#82C809] font-bold text-[45px]">
                   <CountUp
                 className="counter font-bold text-[45px] "
                 enableScrollSpy={true}
@@ -98,7 +98,7 @@ export default function SectionOne() {
                 prefix=" " //left side of counter
                 suffix="" //right side of counter
               ></CountUp>
-
++
                   </span>
                   <span className="text-[15px]">Satisfied Customers</span>
                 </div>

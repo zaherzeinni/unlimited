@@ -10,19 +10,20 @@ export default function ClientsLogo() {
 
           <img src="/LogoTitleSm.png" class="sm:w-1/3 pt-8 md:hidden block" /> */}
 
-<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p class="  text-[30px]   font-normal  text-[#191919]  xl:text-[60px]">
+<div class="flex flex-col sm:flex-row sm:items-center sm:justify-between leading-none">
+            <p class="  text-[27px]   font-normal  text-[#191919]  md:text-[35px]">
 
           
             <span className="!mr-2">  We're</span>
             {/* <span className="font-raleway text-[#82C809] font-extrabold  lg:text-[60px] sm:text-[30px] text-[30px]">UN</span> */}
            
                  <img
-                  class="sm:w-[29px] sm:h-[23px] sm:mb-[5px] xl:w-[72px] xl:ml-2 xl:mb-[8px] mb-[6px] inline-block object-fit xl:h-[46px] lg:w-[30px] lg:h-[23px] lg:mb-1 w-[29px] h-[23px] "
+                  class="sm:w-[29px] sm:h-[23px] sm:mb-[5px] md:w-[45px] md:ml-0 md:mb-[8px] mb-[6px] inline-block object-fit md:h-[27px] w-[29px] h-[23px] "
                   src="/UN.png"
                 />
            
-            <span className="text-[#191919] inline-block  uppercase font-semibold fle items-center">
+            {/* <span className="text-[#191919]  inline-block  uppercase font-semibold fle items-center"> */}
+            <span className=" font-raleway  uppercase md:text-[35px] text-[27px] !font-bold ">
 
            
       
