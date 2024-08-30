@@ -101,6 +101,10 @@ export default function ClientSlider({}) {
     { id: 88, image: "/Done/Sephora Logo.png" },
     { id: 89, image: "/Done/Spotify Logo.png" },
     { id: 90, image: "/Done/YouTube Logo.png" },
+    { id: 91, image: "/Done/abouDhabi.png" },
+    { id: 92, image: "/Done/BAT.png.jpg" },
+    { id: 93, image: "/Done/department.png" },
+    { id: 94, image: "/Done/experienceAD.png" },
 
 
   ];
