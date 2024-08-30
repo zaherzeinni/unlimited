@@ -41,7 +41,7 @@ export default function SectionOne() {
         {/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[38px] text-[27px]">UN</span> */}
 
         <img
-                  class=" mt-[2px] mr-[2px] sm:mt-[5px] w-[27px] h-[21px] sm:w-[40px]1 sm:h-[33px]1 sm:w-[38px] sm:h-[30px] sm:mb-1   inline-block object-fit  "
+                  class=" mt-[2px] mr-[2px] sm:mt-[5px] w-[27px] h-[21px] sm:w-[40px]1 sm:h-[33px]1 sm:w-[38px] sm:h-[30px] mb-2  inline-block object-fit  "
                   src="/UN.png"
                 />
           <span className="staatliches-regular sm:text-[38px] text-[27px] w-[500px] !font-bold  ">

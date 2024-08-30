@@ -70,7 +70,7 @@ export default function Footer() {
               Unlock Your
               <div className="flex items-center mx-2">
                 <img
-                  className="object-fit mt-[2px] w-[30px] h-[27px] md:w-[40px] md:h-[28px] sm:mt-[1px] lg:w-[45px] lg:h-[28px] lg:mb-0 xl:w-[72px] xl:h-[48px]  md:ml-2 md:-mb-0 xl:mb-0"
+                  className="object-fit mb-[4px] w-[30px] h-[27px] md:w-[40px] md:h-[28px] sm:-mt-[4px] lg:w-[45px] lg:h-[28px] lg:mb-0 xl:w-[72px] xl:h-[50px] xl:mb-2 md:ml-2 md:-mb-0 xl:mb-0"
                   src="/UN.png"
                 />
 {/* 
