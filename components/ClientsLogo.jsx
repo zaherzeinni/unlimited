@@ -18,12 +18,12 @@ export default function ClientsLogo() {
             {/* <span className="font-raleway text-[#82C809] font-extrabold  lg:text-[60px] sm:text-[30px] text-[30px]">UN</span> */}
            
                  <img
-                  class="sm:w-[29px] sm:h-[23px] sm:mb-[5px] md:w-[45px] md:ml-0 md:mb-[8px] mb-[6px] inline-block object-fit md:h-[27px] w-[29px] h-[23px] "
+                  class="w-[29px] h-[21px] mb-[4px] mr-[2px] sm:mb-[8px] sm:w-[45px] sm:h-[27px] sm:ml-1  inline-block object-fit   "
                   src="/UN.png"
                 />
            
             {/* <span className="text-[#191919]  inline-block  uppercase font-semibold fle items-center"> */}
-            <span className=" font-raleway  uppercase md:text-[35px] text-[27px] !font-bold ">
+            <span className=" font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold ">
 
            
       

@@ -66,11 +66,11 @@ export default function Footer() {
         </div>
         <div className="pt-32 pb-14 sm:pb-8">
           <div className="flex mb-14 md:mb-24 flex-col sm:flex-row sm:items-center sm:justify-between">
-            <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  xl:text-[40px]">
+            <p className="sm:flex hidde text-[34px]  items-center font-normal  text-[#191919]  ">
               Unlock Your
               <div className="flex items-center mx-2">
                 <img
-                  className="object-fit mb-[4px] w-[30px] h-[27px] md:w-[40px] md:h-[29px] sm:-mt-[4px] md:ml-2 -ml-1 sm:ml-0 md:-mb-0 xl:mb-0"
+                  className="object-fit mb-[0px] w-[30px] h-[27px] sm:w-[40px] sm:mt-0 -ml-1 sm:ml-2 md:-mb-0 "
                   src="/UN.png"
                 />
 {/* 
