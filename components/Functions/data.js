@@ -81,7 +81,7 @@ export const people = [
      image: "/people/sandra hamdan.jpeg",
      title:"Chief Marketing Officer",
      link:"",
-      desc: "Sandra Hamdan is a dynamic and results-driven Senior Brand Marketing & Communication Strategist with a passion for building and transforming brands across the entertainment, FMCG, and destination marketing sectors. Renowned for her creativity, strategic acumen, and leadership skills, Sandra consistently delivers exceptional results.With over 25 years of experience, Sandra has played pivotal roles in developing and executing innovative marketing strategies for some of the world's leading brands. Her career began at British American Tobacco, where she spent over a decade honing her skills in brand management, trade marketing, and strategy across the Middle East, Africa, and Eastern Europe. During this time, she focused on premium brand development and market growth, driving substantial business success.Sandra's expertise extends to the entertainment industry, where she led the marketing and communications for the globally recognized Warner Bros. World Abu Dhabi. Her efforts were instrumental in establishing the theme park as a major attraction, with high-profile launch events that captured global attention. Similarly, she developed and executed pre-opening and opening marketing strategies for SeaWorld Yas Island Abu Dhabi, ensuring a successful market entry and high engagement. while her management of marketing and communications for Qasr Al Watan positioned it as a significant cultural destination.In the realm of destination marketing, Sandra spearheaded the relaunch of Abu Dhabi's tourism brand while at the Department of Culture & Tourism, delivering the project under exceptional tight timelines and securing full endorsement from senior stakeholders. Her strategic leadership for Yas Island Abu Dhabi significantly increased visitor numbers and enhanced brand awareness, positioning Yas Island as a global entertainment destination.Sandra also demonstrated her entrepreneurial spirit by leading the strategic development and launch of the startup entertainment platform MADE. Her ability to drive growth through effective team leadership, data-driven insights, and investor engagement was crucial to the platform's success.Known for her ability to build strong brand presence, optimize market positioning, and leverage data-driven insights, Sandra excels in creating compelling brand identities and marketing strategies, coupled with driving effective business development initiatives. Her global and regional network, coupled with her track " 
+      desc: "Sandra Hamdan is a results-driven Senior Brand Marketing & Communication Strategist with over 25 years of experience in building and transforming brands across entertainment, FMCG, and destination marketing sectors. Known for her creativity, strategic acumen, and leadership, Sandra has consistently delivered exceptional results for leading global brands.She began her career at British American Tobacco, where she spent over a decade developing her expertise in brand management, trade marketing, and strategy across the Middle East, Africa, and Eastern Europe, focusing on premium brand growth.Sandra has led high-impact marketing strategies for major entertainment brands like Warner Bros. World Abu Dhabi and SeaWorld Yas Island, establishing them as key attractions with successful launch campaigns. At the Department of Culture & Tourism, she spearheaded the relaunch of Abu Dhabi's tourism brand and elevated Yas Island to a global entertainment destination.Her entrepreneurial spirit shone through as she led the launch of the startup entertainment platform MADE, driving growth with strategic leadership and data-driven insights. Sandra's ability to optimize market positioning and create compelling brand identities makes her an invaluable asset to the team." 
      
      },
 
@@ -124,7 +124,7 @@ export const companyData = [
   title:'DAF',
   image:'/brands/Logo_Negro.png',
   desc:'"At DAF, we transform visions into reality. Founded by the world’s second-best Executive Creative Director, we bring over 30 years of unparalleled experience in brand building, experience design, and advertising. Our team has spearheaded iconic campaigns for global giants like Burger King, Heinz, Mercedes-Benz, Apple, Google, Renault and McDonald’s. With 40+ Grand Prixes and countless awards, our creative consultancy doesn’t just meet expectations; we exceed them. From exceptional branding projects to innovative campaigns addressing strategic needs, DAF is your partner in turning creativity into tangible success."',
-  link:'www.imdaf.com'
+  link:'https://www.imdaf.com'
 
 
 
@@ -151,7 +151,7 @@ export const companyData = [
   title:'JURNEE',
   desc:'Strategic partners, generator of insights and positive business outcome. Storytellers, initiators of thoughts and conversations about your brand. Perception shifters, changing your mind by speaking to your heart. We are a creative, strategic, result driven communication and media powerhouse and we are on a relentless journey of business solutions through creativity.',
   image:'/brands/JURNEE  logo BLUE.png',
-  link:'www.jurneeco.com'
+  link:'https://www.jurneeco.com'
 
 
 
@@ -182,7 +182,7 @@ export const companyData = [
   title:'The Bold Option',
   desc:'Being Bold is the only option when everyone has the same tools, trends, and tactics.Welcome to the age of unlimited choices and limited attention.The Bold Option is a Creative Strategy & Tech Studio.We specialize in being generalists.Our bold approach focuses on understanding the intrinsic relationship between people, products and the evolving culture of technology.We work with diligence towards measurable business outcomes that are understandable, repeatable and scalable.',
   image:'/brands/the bold option.png',
-  link:'umer@theboldoption.com'
+  link:'https://umer@theboldoption.com'
 
 
 },
@@ -192,7 +192,7 @@ export const companyData = [
   title:'Lava Brands',
   desc:"Being an internationally recognized specialized branding and digital communications agency in Dubai and New Jersey compounded with over 20 years of extraordinary experience and knowledge, we believe that each brand is distinguished and we at LAVA BRANDS guarantee distinguished services as a result. In our world-renowned Brand Lab, we make sure that our tailor-made engagements and activations go above and beyond to meet the needs and cope with the upcoming challenges of the brand and market they are in.Our creative, branding and digital communication teams provides integrated marketing communication services that are cost effective and efficient. We make sure to partner with our clients to directly impact the brand's bottom line with measurable results, we are equipped with just the right expertise to set our clients apart from the competition with no looking back." ,
   image:'/brands/lava Logo.svg',
-  link:'www.lava-brands.com'
+  link:'https://www.lava-brands.com'
 
 },
 
@@ -212,8 +212,8 @@ export const companyData = [
   id:8,
   title:'Mia',
   desc:"We focus on providing you with unparalleled, fully customized experiential and BTL marketing solutions; we are obsessively passionate about it.We want you to feel, see, and experience how we transform ideas into bona fide (real) creations.With MIA's ingenuity, creativity, and the ability to follow our “We Can & We Will” motto, we hope that we will parlay your first impressions into long lasting imprints." ,
-  image:'',
-  link:'www.mia-agency.com'
+  image:'/brands/MIA.png',
+  link:'https://www.mia-agency.com'
 
 
 }
@@ -228,9 +228,9 @@ export const companyData = [
 
   id:9,
   title:'Black Rhino',
-  desc:'',
+  desc:'Founded by producer Michel Harb in 2012, Black Rhino Production House is an award-winning boutique known for its high-quality media production. Operating across the MENAT region, Black Rhino has established itself as a leading player in the business building a diverse portfolio.Since 2021, BR conquered the automotive sector, working with prestigious clients such as Chevrolet, Cadillac, Audi, Geely, and Infiniti. The company is recognized for its innovative approach and exceptional production standards.',
   image:'/brands/BLACKRHINO solo.jpg',
-  link:''
+  link:'https://www.blackrhino.tv/en'
 
 
 }
@@ -286,7 +286,7 @@ export const companyData = [
   title:'Ashia',
   desc:'Ashia, founded in 1995, is your trusted partner in crafting unique and customized gifts that leave a lasting impression. With expertise in embroidery and customization, and a presence in UAE, Lebanon, and Egypt, we bring your concepts to life with tailored solutions for events and business needs. From multinationals to advertising agencies, our bespoke services and live event embroidery ensure your brand stands out.',
   image:'/brands/Ashia logo.png',
-  link:'www.ashia.ae'
+  link:'https://www.ashia.ae'
 
 
 
