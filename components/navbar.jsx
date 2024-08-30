@@ -254,7 +254,7 @@ export default function Navbar() {
                   WE ARE
                   <div class="flex  !items-center mx-2">
                     <img
-                      class=" h-[20px] w-[34px] mr-[2px] sm:w-[40px] sm:h-[26px] md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center lg:mb-5 mb-1"
+                      class=" h-[19px] w-[34px] mr-[2px] sm:w-[40px] sm:h-[26px] md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center mb-[2px] sm:mb-[1px]"
                       src="/btn2-big.png"
                     />
                     

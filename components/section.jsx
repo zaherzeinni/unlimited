@@ -41,7 +41,7 @@ export default function SectionOne() {
         {/* <span className="font-raleway text-[#82C809] font-extrabold  sm:text-[38px] text-[27px]">UN</span> */}
 
         <img
-                  class=" mt-[2px] mr-[2px] sm:mt-[5px] w-[27px] h-[21px] sm:w-[40px]1 sm:h-[33px]1 sm:w-[40px] sm:h-[30px] mb-2  inline-block object-fit  "
+                  class=" mt-[7px] mr-[2px] w-[27px] h-[21px] sm:w-[40px] sm:h-[30px] mb-2  inline-block object-fit  "
                   src="/UN.png"
                 />
           <span className="staatliches-regular sm:text-[38px] text-[27px] w-[500px] !font-bold  ">
@@ -67,8 +67,8 @@ export default function SectionOne() {
                 scrollSpyOnce={true}
                 start={0}
                 end={30}
-                duration={2}
-                delay={0.2}
+                duration={4}
+                delay={0.5}
                 separator=" "
                 decimals={0}
                 decimal=","
@@ -90,8 +90,8 @@ export default function SectionOne() {
                 scrollSpyOnce={true}
                 start={0}
                 end={400}
-                duration={2}
-                delay={0.2}
+                duration={4}
+                delay={0.3}
                 separator=" "
                 decimals={0}
                 decimal=","
@@ -112,8 +112,8 @@ export default function SectionOne() {
                 scrollSpyOnce={true}
                 start={0}
                 end={10}
-                duration={2}
-                delay={0.2}
+                duration={4}
+                delay={0.5}
                 separator=" "
                 decimals={0}
                 decimal=","
