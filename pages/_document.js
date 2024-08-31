@@ -5,7 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Unlmtd</title>
+          {/* <title>Unlmtd</title> */}
           <link sizes="512x512" rel="icon" href="/UN.png" />
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />

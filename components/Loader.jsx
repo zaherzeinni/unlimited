@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 export default function Loader() {
   return (
     <div className='h-screen1 h-screen-80 w-full relative'>

@@ -9,43 +9,72 @@ export default function ContactModal({ isOpen, setIsOpen }) {
   }
 
       //const token = getCookie('token');
-      const [formData, setFormData] = useState({
-        type: "international_request",
-        name: "",
-        email: "",
-        phone: "",
-        body: "",
-    });
+    //   const [formData, setFormData] = useState({
+    //     type: "international_request",
+    //     name: "",
+    //     email: "",
+    //     phone: "",
+    //     body: "",
+    // });
 
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+    // const handleChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setFormData({ ...formData, [name]: value });
+    // };
 
 
-    const handleSubmit = (e) => {
+    
+// ------------------------ API TO SEND EMAILS ------------------
 
-        e.preventDefault();
+  const onSendEmail = async (e) => {
+    e.preventDefault();
+
+    try {
+      //   const isProd = process.env.NODE_ENV === 'production'
+      //   const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
+
+      if (
+        e.target.name.value !== "" &&
+        e.target.email.value !== "" &&
+        e.target.phone.value !== "" &&
+        e.target.message.value !== ""
+      ) {
+        const res = await fetch(`/api/contact`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+
+          body: JSON.stringify({
+            title: "Contact Us",
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
+          }),
+        });
+
+        console.log("response", res?.status);
+
+        if (res.status === 200) {
+          toast.success("Your message has sent successfully, thank you.");
+        }
+      } else {
+        toast.error("Some fields are empty");
+      }
+
+      //   setIsEmailSent(true)
+      //   setShowToast(true)
+    } catch (e) {
+      console.error(e);
+      toast.error("Something went wrong,please try again");
+
+      //   setIsEmailSent(false)
+      //   setShowToast(true)
+    }
+  };
 
 
-        // axios.post(url + "/" + prefix + '/request/send', formData , {
-        //         headers:{
-        //         'Authorization' : 'Bearer ' + token,
-        //         }
-        //     })
-        //     .then((response) => {
-        //         toast.success("سفارش با موفقیت ثبت شد منتظر تماس کارشناسان ما باشید");
-        //     })
-        //     .catch((error) => {
-        //         toast.error(error.response.data)
-        //     })
-        //     .finally(() => {
-        //         console.log("final")
-        //     });
 
-
-    };
 
 
 
