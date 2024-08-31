@@ -250,24 +250,14 @@ export default function Navbar() {
               {/* <img src="/titleDesk.png" /> */}
 
               <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
-                <p class="sm: hidde cursor-pointer1  text-[22px]  items-center font-normal  text-white  lg:text-[84px] -mt-20 lg:-mt-32 ">
+                <p class="sm: hidde cursor-pointer1  text-[28px] sm:text-[32px] lg:text-[84px]  items-center font-normal  text-white   -mt-20 lg:-mt-32 ">
                   WE ARE
                   <div class="flex  !items-center mx-2">
                     <img
-                      class=" h-[19px] w-[34px] mr-[2px] sm:w-[40px] sm:h-[26px] md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center mb-[2px] sm:mb-[1px]"
-                      src="/btn2-big.png"
+                      class=" h-[22px] w-[34px] mb-[1px] mr-[2px] sm:w-[60px] sm:h-[52px] sm:mr-1 md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center  sm:mb-[1px]"
+                      src="/un.png"
                     />
                     
-                    {/* <span className="font-raleway -ml-2  sm:ml-0 text-[#82C809] font-extrabold lg:text-[100px] xl:text-[130px]   sm:text-[38px] text-[23px]">UN</span> */}
-
-
-                    {/* <img
-                  class=" w-[29px] h-[27px] mt-[1px] sm:w-[40px] sm:h-[37px] sm:mb-[1px]  md:w-[45px] md:h-[40px] md:mt-[1px] md:ml-1  inline-block object-fit "
-                  src="/UN.png"
-                /> */}
-
-                
-                    {/* <span class="text-white lg:text-[155px] text-[40px]  uppercase font-semibold">{text}</span>  */}
 
                     <motion.span
                     
@@ -277,7 +267,7 @@ export default function Navbar() {
                   
                     key={text[currentIndex]}
                     
-                    className={`content-list !overflow-hidden text-white animation1 lg:text-[100px] xl:text-[130px]  text-[24px] xs:text-[22px] sm:text-[35px] uppercase font-semibold transition-transform duration-500 ease-in-out  
+                    className={`content-list !overflow-hidden text-white animation1 text-[29px] sm:text-[65px] lg:text-[100px] xl:text-[130px]  uppercase font-semibold transition-transform duration-500 ease-in-out  
                   `}
                     
                     >

@@ -12,6 +12,8 @@ import ClientsLogo from "@/components/ClientsLogo";
 import Footer from "@/components/Footer";
 import   Head  from "next/head";
 
+
+
 export default function Index({}) {
   const router = useRouter();
 
