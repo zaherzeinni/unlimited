@@ -255,7 +255,7 @@ export default function Navbar() {
                   <div class="flex  !items-center mx-2">
                     <img
                       class=" h-[22px] w-[34px] mb-[1px] mr-[2px] sm:w-[60px] sm:h-[52px] sm:mr-1 md:ml-0 lg:w-[130px] lg:h-[80px] lg:mr-2 xl:w-[130px] xl:h-[93px] object-center  sm:mb-[1px]"
-                      src="/un.png"
+                      src="/UN.png"
                     />
                     
 
