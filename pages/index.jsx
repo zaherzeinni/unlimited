@@ -10,34 +10,41 @@ import SectionThree from "@/components/sectionThree";
 import SectionFour from "@/components/PeopleSlider";
 import ClientsLogo from "@/components/ClientsLogo";
 import Footer from "@/components/Footer";
-import   Head  from "next/head";
-
-
+import Head from "next/head";
+import Loader from "@/components/Loader";
 
 export default function Index({}) {
-  const router = useRouter();
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate a delay to show the loader
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 10000); // Adjust the delay as needed (e.g., 2000ms = 2 seconds)
+
+    // Clean up the timer if the component unmounts
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className=" ">
       <Head>
         <title>Unlmtd</title>
-        <link 
-        sizes="512x512"
-        
-        rel="icon" href="/UN.png" />
-
-
-
+        <link sizes="512x512" rel="icon" href="/UN.png" />
       </Head>
 
-      <div className="mb-2  overflow-x-hidden ">
-        <Navbar />
-        <SectionOne />
-        <SectionTwo />
-        <SectionThree />
-        <ClientsLogo />
-        <Footer />
-      </div>
+      {loading === true ? (
+        <Loader />
+      ) : (
+        <div className="mb-2  overflow-x-hidden ">
+          <Navbar />
+          <SectionOne />
+          <SectionTwo />
+          <SectionThree />
+          <ClientsLogo />
+          <Footer />
+        </div>
+      )}
     </div>
   );
 }

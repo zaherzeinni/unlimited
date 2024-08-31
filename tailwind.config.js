@@ -18,6 +18,12 @@ module.exports = {
     },
     extend: {
 
+
+      height: {
+        'screen-80': '80vh', // Example of a custom height utility
+      },
+
+      
       fontFamily: {
         kufi: ["Noto Kufi Arabic", "sans-serif"],
         ibm: ['IBM Plex Sans Arabic', 'sans-serif'],

@@ -61,16 +61,16 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
 
 
     
-              <Dialog.Panel  className="  w-full  mt-24 !max-w-[80%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
-                <div className="mt-2 md:1px-4 md:1py-4 -mx-10  ">
+              <Dialog.Panel  className="  w-full  mt-6 !max-w-[80%] transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <div className="mt-2 md:1px-4 md:1py-4 -mx-10 ">
                 <Dialog.Title
                 as="h3"
                 className={`text-lg font-medium mt-6 pr-10 pt-3  border-t-[100px] -top-12 !  w-full  relative rounded-2xl text-end flex justify-end leading-6 text-gray-900      ${cardColor}    `}
               >
                <IoMdClose className="text-3xl  relative -top-20 text-white cursor-pointer" onClick={closeModal} />
               </Dialog.Title>
-                  <div className=" flex cursor-pointer gap-12 md:flex-row flex-col ml-[15%] ">
-                    <div className="relative ">
+                  <div className=" flex cursor-pointer gap-12 md:flex-row flex-col ml-[15%] -mt-10">
+                    <div className="relative md:-ml-10 xl:-ml-20 ">
                       <img
                         src={company?.image}
                         alt="Card people"
@@ -98,7 +98,7 @@ export default function CommpanyModal({ isOpen, setIsOpen, company }) {
 
                     <div className="">
                       <div>
-                        <p className=" font-thin mb-4 text-[20px] md:text-[32px]">
+                        <p className=" font-raleway font-thin mb-4 text-[20px] md:text-[32px]">
                           {" "}
                           <span className=" font-bold">{company?.title} </span>
                         </p>
