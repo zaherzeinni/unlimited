@@ -1,22 +1,42 @@
-const passw = "bbvh hors bgbq pxjm";
-const email = "noreply.springworthbooks@gmail.com";
+const email = "	imani.mckenzie@ethereal.email";
+const passw = "AtGUBGJ25t7MUKNgbj";
+
 
 
 import nodemailer from "nodemailer";
 
+// const transporter = nodemailer.createTransport({
+//   //port: 465,
+//   //host: "smtp.gmail.com",
+//   host: 'smtp.ethereal.email',
+//   port: 587,
+//   tls: {
+//     rejectUnauthorized: true,
+//     minVersion: "TLSv1.2"
+// },
+
+//   secure: true, // use SSL
+//   auth: {
+//     // user: "itesa.getViral@gmail.com",
+//     // pass: "rtspkviskcrhorey",
+
+//     user: email, // generated ethereal user
+//     pass: passw, // generated ethereal password
+//   },
+// });
+
+
 const transporter = nodemailer.createTransport({
-  port: 465,
-  host: "smtp.gmail.com",
-
-  secure: true, // use SSL
+  host: 'smtp.ethereal.email',
+  port: 587,
   auth: {
-    // user: "itesa.getViral@gmail.com",
-    // pass: "rtspkviskcrhorey",
-
-    user: email, // generated ethereal user
-    pass: passw, // generated ethereal password
-  },
+      user: 'imani.mckenzie@ethereal.email',
+      pass: 'AtGUBGJ25t7MUKNgbj'
+  }
 });
+
+
+
 
 async function sendEmail({ name, email, phone, desc}) {
     console.log("SEND????????" ,name ,email ,phone ,desc)

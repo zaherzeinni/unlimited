@@ -3,6 +3,8 @@ import { Fragment ,useState } from "react";
 import axios from 'axios'
 import { Button } from "@chakra-ui/react";
 import { IoMdClose } from "react-icons/io";
+import { toast } from "react-toastify";
+
 export default function ContactModal({ isOpen, setIsOpen }) {
   function closeModal() {
     setIsOpen(false);
@@ -129,16 +131,20 @@ export default function ContactModal({ isOpen, setIsOpen }) {
 </div>
 
 <div>
-<form>
+            <form
+           
+            onSubmit={onSendEmail}
+            >
                     <div className=" w-full flex max-md:flex-col gap-3 mb-3 ml-1">
                         <div className="w-1/3 max-md:w-full">
                             <input 
                                 name="name"
                                 className="p-2 w-full bg-[#EEEEEE]" 
-                                type="text" 
+                                type="text"
+                                id='name' 
                                 placeholder="Full Name" 
-                                value={formData.name}
-                                onChange={handleChange}
+                                // value={formData.name}
+                                // onChange={handleChange}
                             />
                         </div>
                         <div className="w-1/3 max-md:w-full">
@@ -146,9 +152,10 @@ export default function ContactModal({ isOpen, setIsOpen }) {
                                 name="email"    
                                 className="p-2 w-full bg-[#EEEEEE]" 
                                 type="email" 
+                                id='email'
                                 placeholder="Email" 
-                                value={formData.email}
-                                onChange={handleChange}
+                                // value={formData.email}
+                                // onChange={handleChange}
                             />
                         </div>
 
@@ -158,9 +165,10 @@ export default function ContactModal({ isOpen, setIsOpen }) {
                                 name="phone"    
                                 className="p-2 w-full bg-[#EEEEEE]" 
                                 type="text" 
+                                id='phone'
                                 placeholder="Phone" 
-                                value={formData.phone}
-                                onChange={handleChange}
+                                // value={formData.phone}
+                                // onChange={handleChange}
                             />
                         </div>
 
@@ -173,13 +181,14 @@ export default function ContactModal({ isOpen, setIsOpen }) {
                             style={{resize : "none"}} 
                             className="w-full p-2 bg-[#EEEEEE] ml-1" 
                             rows={4} 
+                            id='message'
                             placeholder="Message" 
-                            value={formData.body}
-                            onChange={handleChange}
+                            // value={formData.body}
+                            // onChange={handleChange}
                         />
                     </div>
-                    <div className=" mb-10 mt-4  mx-auto  flex justify-center" onClick={handleSubmit}>
-                        <Button className="!text-white w-[200px] h-[72px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
+                    <div className=" mb-10 mt-4  mx-auto  flex justify-center" >
+                        <Button type="submit" className="!text-white w-[200px] h-[72px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
                             Submit
                         </Button>
                     </div>
