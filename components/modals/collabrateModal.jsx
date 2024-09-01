@@ -2,7 +2,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment ,useState } from "react";
 import axios from 'axios'
 import { Button } from "@chakra-ui/react";
-
+import { toast } from "react-toastify";
 import { IoMdClose } from "react-icons/io";
 
 
@@ -11,28 +11,55 @@ export default function CollabrateModal({ isOpen, setIsOpen }) {
     setIsOpen(false);
   }
 
-      //const token = getCookie('token');
-      const [formData, setFormData] = useState({
-        type: "international_request",
-        name: "",
-        email: "",
-        phone: "",
-        body: "",
-    });
 
+  // ------------------------ API TO SEND EMAILS ------------------
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+  const onSendEmail = async (e) => {
+    e.preventDefault();
 
+    try {
+      //   const isProd = process.env.NODE_ENV === 'production'
+      //   const base = isProd ? 'https://zenorocha.com' : 'http://localhost:3000'
 
-    const handleSubmit = (e) => {
+      if (
+        e.target.name.value !== "" &&
+        e.target.email.value !== "" &&
+        e.target.phone.value !== "" &&
+        e.target.message.value !== ""
+      ) {
+        const res = await fetch(`/api/contact`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
 
-        e.preventDefault();
+          body: JSON.stringify({
+            title: "Contact Us",
+            name: e.target.name.value,
+            email: e.target.email.value,
+            phone: e.target.phone.value,
+            message: e.target.message.value,
+          }),
+        });
 
+        console.log("response", res?.status);
 
-    };
+        if (res.status === 200) {
+        
+          toast.success("Your message has sent successfully, thank you.");
+        }
+      } else {
+        toast.error("Some fields are empty");
+      }
+
+      //   setIsEmailSent(true)
+      //   setShowToast(true)
+    } catch (e) {
+      console.error(e);
+      toast.error("Something went wrong,please try again");
+
+      //   setIsEmailSent(false)
+      //   setShowToast(true)
+    }
+  };
 
 
 
@@ -86,16 +113,17 @@ export default function CollabrateModal({ isOpen, setIsOpen }) {
 
 
 <div>
-<form>
+<form  onSubmit={onSendEmail}>
                     <div className=" w-full flex max-md:flex-col gap-3 mb-3 ml-1">
                         <div className="w-1/3 max-md:w-full">
                             <input 
                                 name="name"
                                 className="p-2 w-full bg-[#EEEEEE]" 
                                 type="text" 
+                                id='name' 
                                 placeholder="Full Name" 
-                                value={formData.name}
-                                onChange={handleChange}
+                                //value={formData.name}
+                                //onChange={handleChange}
                             />
                         </div>
                         <div className="w-1/3 max-md:w-full">
@@ -103,9 +131,10 @@ export default function CollabrateModal({ isOpen, setIsOpen }) {
                                 name="email"    
                                 className="p-2 w-full bg-[#EEEEEE]" 
                                 type="email" 
+                                id='email'
                                 placeholder="Email" 
-                                value={formData.email}
-                                onChange={handleChange}
+                                //value={formData.email}
+                                //onChange={handleChange}
                             />
                         </div>
 
@@ -115,9 +144,10 @@ export default function CollabrateModal({ isOpen, setIsOpen }) {
                                 name="phone"    
                                 className="p-2 w-full bg-[#EEEEEE]" 
                                 type="text" 
+                                id='phone'
                                 placeholder="Phone" 
-                                value={formData.phone}
-                                onChange={handleChange}
+                                //value={formData.phone}
+                                //onChange={handleChange}
                             />
                         </div>
 
@@ -131,12 +161,13 @@ export default function CollabrateModal({ isOpen, setIsOpen }) {
                             className="w-full p-2 bg-[#EEEEEE]" 
                             rows={4} 
                             placeholder="Message" 
-                            value={formData.body}
-                            onChange={handleChange}
+                              id='message'
+                            //value={formData.body}
+                            //onChange={handleChange}
                         />
                     </div>
-                    <div className=" mb-10 mt-4  mx-auto  flex justify-center" onClick={handleSubmit}>
-                        <Button className="!text-white w-[200px] h-[72px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
+                    <div className=" mb-10 mt-4  mx-auto  flex justify-center" >
+                        <Button  type="submit" className="!text-white w-[200px] h-[72px] !bg-[#82C809] hover:!bg-green-700 flex justify-center mx-auto">
                             Submit
                         </Button>
                     </div>
