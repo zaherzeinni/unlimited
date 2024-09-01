@@ -5,6 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify'
+
 import { useEffect } from "react";
 import Head from "next/head";
 
@@ -22,6 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
 
       <ChakraProvider>
         <Component {...pageProps} />
+        <ToastContainer/>
       </ChakraProvider>
     </>
   );

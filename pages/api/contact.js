@@ -1,45 +1,28 @@
-const email = "	imani.mckenzie@ethereal.email";
-const passw = "AtGUBGJ25t7MUKNgbj";
-
-
-
 import nodemailer from "nodemailer";
 
-// const transporter = nodemailer.createTransport({
-//   //port: 465,
-//   //host: "smtp.gmail.com",
-//   host: 'smtp.ethereal.email',
-//   port: 587,
-//   tls: {
-//     rejectUnauthorized: true,
-//     minVersion: "TLSv1.2"
-// },
 
-//   secure: true, // use SSL
-//   auth: {
-//     // user: "itesa.getViral@gmail.com",
-//     // pass: "rtspkviskcrhorey",
+const email = "itpromax2024@gmail.com";
+const passw = "fzkp yybe zxts kbag";
 
-//     user: email, // generated ethereal user
-//     pass: passw, // generated ethereal password
-//   },
-// });
 
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
-  port: 587,
+  port: 465,
+  host: "smtp.gmail.com",
+
+  secure: true, // use SSL
   auth: {
-      user: 'imani.mckenzie@ethereal.email',
-      pass: 'AtGUBGJ25t7MUKNgbj'
-  }
+
+    user: email, 
+    pass: passw, 
+  },
 });
 
 
 
 
-async function sendEmail({ name, email, phone, desc}) {
-    console.log("SEND????????" ,name ,email ,phone ,desc)
+async function sendEmail({ name, email, phone, message}) {
+    console.log("SEND????????" ,name ,email ,phone ,message)
     const defaultYear = new Date().getFullYear();
   const emailOptions = {
     form: email,
@@ -48,7 +31,7 @@ async function sendEmail({ name, email, phone, desc}) {
     html: `<body style="background: #f3f4f6; padding:0 5px;">
     <div style="max-width: 600px; margin: 0 auto; padding: 20px 0; font-family:Trebuchet MS;">
     <div style="text-align: center; margin-bottom: 20px;">
-     <h1 style="color: #000; text-transform: uppercase; font-size: 30px;">You have new contact message from your website</h1>
+     <h1 style="color: #000; text-transform: uppercase; font-size: 30px;">You have new contact message from Unlmtd website</h1>
     </div>
     <div style="padding: 10px; border-radius:5px; background:#fff; -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3); -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3); box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);">
         <h2 style="text-align: center; text-transform: uppercase; color: teal;">New message</h2>
@@ -56,7 +39,7 @@ async function sendEmail({ name, email, phone, desc}) {
         <p style="font-size:1rem;"><strong> Email: </strong> ${email}</p>
         <p style="font-size:1rem;"><strong> Phone: </strong> ${phone}</p>
         
-        <p style="font-size:1rem;"><strong>Message: </strong> ${desc}</p>
+        <p style="font-size:1rem;"><strong>Message: </strong> ${message}</p>
     
     
     </div>

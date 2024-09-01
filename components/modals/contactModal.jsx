@@ -1,6 +1,5 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment ,useState } from "react";
-import axios from 'axios'
 import { Button } from "@chakra-ui/react";
 import { IoMdClose } from "react-icons/io";
 import { toast } from "react-toastify";
@@ -9,22 +8,6 @@ export default function ContactModal({ isOpen, setIsOpen }) {
   function closeModal() {
     setIsOpen(false);
   }
-
-      //const token = getCookie('token');
-    //   const [formData, setFormData] = useState({
-    //     type: "international_request",
-    //     name: "",
-    //     email: "",
-    //     phone: "",
-    //     body: "",
-    // });
-
-
-    // const handleChange = (e) => {
-    //     const { name, value } = e.target;
-    //     setFormData({ ...formData, [name]: value });
-    // };
-
 
     
 // ------------------------ API TO SEND EMAILS ------------------
@@ -58,6 +41,7 @@ export default function ContactModal({ isOpen, setIsOpen }) {
         console.log("response", res?.status);
 
         if (res.status === 200) {
+        
           toast.success("Your message has sent successfully, thank you.");
         }
       } else {
