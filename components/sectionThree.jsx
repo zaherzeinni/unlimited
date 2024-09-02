@@ -93,7 +93,7 @@ useEffect(() => {
                   class=" w-[31px] h-[27px] mt-[6px] sm:w-[40px] sm:h-[37px]   md:w-[47px] md:h-[40px] sm:mt-[7px] md:ml-1 mb-2 inline-block object-fit "
                   src="/UN.png"
                 />
-                  <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-x-64'}`}>
+                  <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>
 
                
         <div className="staatliches-regular sm:text-[50px] text-[35px] !font-bold  ">PARALLED</div>
