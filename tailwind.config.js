@@ -45,17 +45,13 @@ module.exports = {
 marquee : "marquee 30s linear  infinite",
 
 marquee2 : "marquee2  50s linear  infinite ",
-fadeIn: 'fadeIn 3s ease-out',
 
       }
 
       ,
 
       keyframes : {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
+
         marquee : {
 
           "0%" : {transform :"translateX(50%)"},
