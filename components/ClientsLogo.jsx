@@ -56,7 +56,7 @@ useEffect(() => {
            
             {/* <span className="text-[#191919]  inline-block  uppercase font-semibold fle items-center"> */}
             
-            <div  ref={ref} className={`transition-transform duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 sm:translate-y-32 -translate-y-10'}`}>
+            {/* <div  ref={ref} className={`transition-transform duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 sm:translate-y-32 -translate-y-10'}`}> */}
             <span className=" font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold ">
 
            
@@ -65,7 +65,7 @@ useEffect(() => {
 
 
                 </span>
-</div>
+{/* </div> */}
               <div class="flex items-center ">
              
                    <span className=" block">in your collective experience</span>
