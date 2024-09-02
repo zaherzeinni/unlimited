@@ -2,10 +2,46 @@ import React from "react";
 
 
 
+import { useEffect, useState, useRef } from 'react';
 
 // --------------------------- sectionTWO SERVICES LIST right and left Columns----------------
 
 export default function SectionTwo() {
+
+
+
+// --------------------motion for word animation-----------------
+
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 1 } // Trigger when 10% of the element is visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+
+
+
+
+
+
+
+
   return (
     <div id="services">
       <div className="py-16  md:py-28 bg-gradient-to-tr bg-[#080852]  relative mx-auto w-full">
@@ -37,7 +73,9 @@ export default function SectionTwo() {
                   class="w-[25px] sm:ml-1 mr-[1px] mt-[2px]  h-[16px] sm:mt-[5px] sm:w-[40px] sm:h-[30px] md:w-[48px] md:h-[39px]   inline-block object-fit  "
                   src="/UN.png"
                 />
+                 <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-32'}`}>
         <div className="staatliches-regular text-[20px] sm:text-[40px] md:text-[50px] items-end flex  !font-bold  ">BELIEVABLY</div>
+        </div>
         <p className='raleway sm:ml-3 text-[18px] sm:text-[30px] md:text-[40px] lg:text-[50px] items-end flex'>easy</p>
         
         

@@ -1,11 +1,36 @@
 import React from "react";
 import CountUp from 'react-countup';
+import {motion} from 'framer-motion'
 
-
+import { useEffect, useState, useRef } from 'react';
 
 // -----------------------------sectionOne ABOUT section after Animation------------------
 
 export default function SectionOne() {
+
+// ----------this is for animation word-------------------------
+
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { threshold: 1 } // Trigger when 10% of the element is visible
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
 
 
 
@@ -44,9 +69,22 @@ export default function SectionOne() {
                   class=" mt-[7px] mr-[2px] w-[27px] h-[21px] sm:w-[40px] sm:h-[30px] mb-2  inline-block object-fit  "
                   src="/UN.png"
                 />
+                {/* <motion.div
+    initial={{opacity: 0, y: 700}}
+    animate={{opacity: 1, y: 0}}
+    transition={{ delay:3, ease: "easeOut"}}> */}
+
+    <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-32'}`}>
           <span className="staatliches-regular sm:text-[38px] text-[27px] w-[500px] !font-bold  ">
+
+          
             APOLOGETICALLY
+
+          
           </span>
+
+          </div>
+          {/* </motion.div> */}
         </div>
 
 

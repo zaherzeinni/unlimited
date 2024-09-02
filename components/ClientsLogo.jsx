@@ -1,7 +1,39 @@
 import { Fragment } from "react";
 import ClientSlider from "./ClientSlider";
-
+import { useEffect, useState, useRef } from 'react';
 export default function ClientsLogo() {
+
+
+
+// --------------------motion for word animation-----------------
+
+const [isVisible, setIsVisible] = useState(false);
+const ref = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setIsVisible(entry.isIntersecting);
+    },
+    { threshold: 1 } // Trigger when 10% of the element is visible
+  );
+
+  if (ref.current) {
+    observer.observe(ref.current);
+  }
+
+  return () => {
+    if (ref.current) {
+      observer.unobserve(ref.current);
+    }
+  };
+}, []);
+
+
+
+
+
+
   return (
     <div className="w-full h-[600px] md:h-[800px] h-aut  max-h-[800px] cursor-pointer overflow-hidden ">
       <div class="bg-white">
@@ -23,6 +55,8 @@ export default function ClientsLogo() {
                 />
            
             {/* <span className="text-[#191919]  inline-block  uppercase font-semibold fle items-center"> */}
+            
+            <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-x-64'}`}>
             <span className=" font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold ">
 
            
@@ -31,7 +65,7 @@ export default function ClientsLogo() {
 
 
                 </span>
-
+</div>
               <div class="flex items-center ">
              
                    <span className=" block">in your collective experience</span>

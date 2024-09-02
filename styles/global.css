@@ -16,6 +16,12 @@
 
 
 
+
+
+
+
+
+
 @layer utilities {
   .container1 {
     @apply mx-12 px-2;

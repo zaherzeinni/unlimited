@@ -17,7 +17,45 @@ import React, { Fragment } from "react";
 import PeopleSlider from './PeopleSlider'
 import CompanySlider from './CompanieSlider'
 
+
+
+import { useEffect, useState, useRef } from 'react';
+
 export default function SectionThree() {
+
+
+
+
+
+// --------------------motion for word animation-----------------
+
+const [isVisible, setIsVisible] = useState(false);
+const ref = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setIsVisible(entry.isIntersecting);
+    },
+    { threshold: 1 } // Trigger when 10% of the element is visible
+  );
+
+  if (ref.current) {
+    observer.observe(ref.current);
+  }
+
+  return () => {
+    if (ref.current) {
+      observer.unobserve(ref.current);
+    }
+  };
+}, []);
+
+
+
+
+
+
 
 
   return (
@@ -55,7 +93,11 @@ export default function SectionThree() {
                   class=" w-[31px] h-[27px] mt-[6px] sm:w-[40px] sm:h-[37px]   md:w-[47px] md:h-[40px] sm:mt-[7px] md:ml-1 mb-2 inline-block object-fit "
                   src="/UN.png"
                 />
+                  <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-x-64'}`}>
+
+               
         <div className="staatliches-regular sm:text-[50px] text-[35px] !font-bold  ">PARALLED</div>
+        </div>
         </div>
         <div className='raleway  leading-none sm:w-[550px] md:w-[750px] sm:text-[35px] w-[100%] text-[27px]  text-wrap sm:ml-0 ml-0'>ecosystem looks like</div>
 </div>

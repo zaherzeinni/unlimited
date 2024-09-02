@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React , {useState,useEffect,useRef} from "react";
 import CollabrateModal from "./modals/collabrateModal";
 import Link from "next/link";
      
@@ -7,6 +7,37 @@ export default function Footer() {
 
 
   const [isOpen, setIsOpen] = useState(false);
+
+
+
+// --------------------motion for word animation-----------------
+
+const [isVisible, setIsVisible] = useState(false);
+const ref = useRef(null);
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      setIsVisible(entry.isIntersecting);
+    },
+    { threshold: 1 } // Trigger when 10% of the element is visible
+  );
+
+  if (ref.current) {
+    observer.observe(ref.current);
+  }
+
+  return () => {
+    if (ref.current) {
+      observer.unobserve(ref.current);
+    }
+  };
+}, []);
+
+
+
+
+
 
 
   return (
@@ -75,11 +106,13 @@ export default function Footer() {
                 />
 {/* 
                 <span className="font-raleway sm:ml-2 text-[#82C809] font-extrabold  md:text-[60px]1 xl:text-[65px] -ml-2 text-[34px]">UN</span> */}
-                
+                   
+            <div  ref={ref} className={`transition-transform duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0    -translate-y-60'}`}>
                 <span className="text-[#191919]  uppercase font-semibold">
                   lmtd
-                </span>{" "}
-                <span className="mx-2 ">Potential</span>
+                </span>
+                </div>
+                <span className="mx-2  ">Potential</span>
               </div>
             </p>
 
