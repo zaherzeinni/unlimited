@@ -56,8 +56,8 @@ useEffect(() => {
            
             {/* <span className="text-[#191919]  inline-block  uppercase font-semibold fle items-center"> */}
             
-            {/* <div  ref={ref} className={`transition-transform duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 sm:translate-y-32 -translate-y-10'}`}> */}
-            <span className=" font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold ">
+            {/* <div  ref={ref} className={`font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold    transition-transform duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 sm:translate-y-32 -translate-y-10'}`}> */}
+            <span  ref={ref} className="font-raleway  uppercase sm:text-[35px] text-[27px] !font-bold ">
 
            
       
